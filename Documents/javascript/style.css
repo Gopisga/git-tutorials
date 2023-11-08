@@ -1,0 +1,75 @@
+/* Set the background color */
+body {
+    background-color: #000000;
+    font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+  }
+  
+  /* Center the content */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+	width:  317px;
+  }
+  
+  /* Style the Twitter X logo */
+  .logo {
+ size :1000px;
+  position: relative;
+  border : 40px red ;
+    cursor: pointer;
+  }
+
+  /* Style the tweet box */
+  .tweet-box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  /* Style the tweet input */
+  .tweet-input {
+    width: 100%;
+    height: 80px;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the tweet button */
+  .tweet-button {
+    background-color: #01080cf1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Style the tweets list */
+  .tweets-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Style each tweet item */
+  .tweet-item {
+    background-color: #fbfbfa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the tweet text */
+  .tweet-text {
+    font-size: 16px;
+  }
+  
+  /* Style the tweet author */
+  .tweet-author {
+    font-weight: bold;
+  }
