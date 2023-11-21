@@ -1,10 +1,9 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import{Link} from "react-router-dom";
 
 
-export default function Header(props) {
+function Header(props) {
   return (
     <nav className ="navbar navbar-expand-lg bg-body-tertiary">
     <div className ="container-fluid">
@@ -45,3 +44,5 @@ Header.propTypes = {
     title: PropTypes.string,
     searchBar: PropTypes.bool.isRequired
 }
+
+export default Header;

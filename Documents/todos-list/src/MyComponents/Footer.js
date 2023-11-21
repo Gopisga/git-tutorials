@@ -1,12 +1,11 @@
-
 import React from 'react'
 
-export  const Footer = () => {
+const Footer = () => {
   const footerstyle ={
-    position: "relative",
+    position: "sticky",
     top: "100vh",
     width: "100%",
-   border : "2px solid limegreen"
+   border : "6px solid limegreen"
   }
   return (
     <footer className= "bg-dark text-light py-3"  style ={footerstyle} >
@@ -17,4 +16,4 @@ export  const Footer = () => {
   )
   }
 
-
+  export default Footer;

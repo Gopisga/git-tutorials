@@ -1,15 +1,15 @@
 import './App.css';
-import Header from "./MyComponents/Header";
-import {Todos} from "./MyComponents/Todos";
-import {Footer} from "./MyComponents/Footer";
-import{AddTodo} from "./MyComponents/AddTodo";
-import {About}  from   "./MyComponents/About";
+import Header from './MyComponents/Header.js';
+import {Todos} from './MyComponents/Todos.js';
+import Footer from './MyComponents/Footer.js';
+import {AddTodo} from './MyComponents/AddTodo.js';
+import {About} from './MyComponents/About.jsx';
+
 import React, { useEffect, useState } from 'react'; 
 import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Outlet,
 } from "react-router-dom";
   
 function App() {
@@ -21,7 +21,6 @@ function App() {
     initTodo = JSON.parse(localStorage.getItem("todos"));
   }
    const onDelete=(todo)=>{
-    console.log("I am onDelete of todo ",todo);
    // let index = todos.indexOf(todo);
    // todos.splice(index, 1);
     setTodos(todos.filter((e)=>{
@@ -32,7 +31,7 @@ function App() {
    const addTodo =(title,desc)=>{
     console.log("I am adding this todo ",title,desc)
     let slno;
-    if(todos.length==0) {
+    if(todos.length===0) {
       slno = 1;
     }
     else {
@@ -82,4 +81,5 @@ return (
 }
 
 export default App;
+
 

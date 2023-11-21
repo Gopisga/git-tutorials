@@ -1,6 +1,5 @@
-
 import React from 'react'
-import {TodoItem} from "./TodoItem";
+import { TodoItem } from './TodoItem'
 
 export const Todos = (props) => {
   let myStyle ={
@@ -15,12 +14,12 @@ export const Todos = (props) => {
          return(
          
           <>
-          <TodoItem todo={todo} key={todo.sno}  onDelete={props.onDelete}/> <hr/>
+          <TodoItem   key={todo.id}  todo={todo}   onDelete={props.onDelete}/> <hr/>
           </>
          )
       })
       }
+    
     </div>
   )
 }
-  
